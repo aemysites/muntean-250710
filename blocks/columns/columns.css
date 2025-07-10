@@ -68,7 +68,7 @@
   }
 }
 
-/* === Merged .columns.columns18 selector === */
+/* === Merged .columns.columns18 selector before .columns.columns3 selectors to resolve no-descending-specificity === */
 .columns.columns18 {
   display: flex;
   flex-direction: row;
@@ -142,5 +142,136 @@
     max-width: 100%;
     flex-basis: 100%;
     gap: 16px;
+  }
+}
+
+/* .columns.columns3 selectors moved after .columns.columns18 to resolve no-descending-specificity */
+.columns.columns3 {
+  width: 100%;
+  background: #fff;
+  padding: 0;
+}
+
+/* ROW: Only layout the direct child as flex row and center vertically */
+.columns.columns3 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  max-width: 1100px;
+  min-height: 340px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 48px;
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (width <= 900px) {
+  .columns.columns3 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+    padding: 0 10px;
+    min-height: unset;
+  }
+}
+
+/* Left column: align content left, limit paragraph width */
+.columns.columns3 > div > div:first-child {
+  min-width: 0;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.columns.columns3 h2 {
+  font-family: var(--heading-font-family);
+  font-size: 2.7rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #111;
+  line-height: 1.05;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+.columns.columns3 > div > div:first-child p {
+  font-family: var(--body-font-family);
+  font-size: 1.05rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 390px;
+  margin-top: 0;
+}
+
+/* Right column: buttons vertically centered and stacked */
+.columns.columns3 > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.columns.columns3 > div > div:last-child p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+/* Pill button look: taller and wider for better match */
+.columns.columns3 > div > div:last-child a,
+.columns.columns3 > div > div:last-child a:visited {
+  display: block;
+  width: 170px;
+  padding: 18px 0 17px;
+  text-align: center;
+  color: #111;
+  background: #fff;
+  border: 1.5px solid #111;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  outline: none;
+}
+
+.columns.columns3 > div > div:last-child a:hover,
+.columns.columns3 > div > div:last-child a:focus {
+  border-color: #222;
+  color: #1a1a1a;
+  background: #fafaf8;
+}
+
+/* Subtle yellow border highlight for first button (top/right only) */
+.columns.columns3 > div > div:last-child a:first-child {
+  border-top: 1.5px solid #e6e600;
+  border-right: 1.5px solid #e6e600;
+}
+
+/* Responsive: relaxed padding/gap, buttons full width on mobile */
+@media (width <= 600px) {
+  .columns.columns3 > div {
+    padding: 0 2vw;
+    gap: 22px;
+  }
+
+  .columns.columns3 > div > div:last-child a,
+  .columns.columns3 > div > div:last-child a:visited {
+    width: 100%;
+    min-width: 0;
+    max-width: 300px;
   }
 }
