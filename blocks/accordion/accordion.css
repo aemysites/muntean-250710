@@ -55,7 +55,87 @@
   padding: 0 16px;
 }
 
+.accordion.accordion33 .accordion-item-body {
+  background: #f7f7f5;
+  padding: 0 4px 6px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+.accordion.accordion33 {
+  background: #f7f7f5;
+  width: 100%;
+  padding: 0;
+}
+
+/* Remove default border and margin between accordion items, match divider */
+.accordion.accordion33 .accordion-item {
+  border: none;
+  border-bottom: 1px solid #e0e0db;
+  margin: 0;
+  background: transparent;
+}
+
+.accordion.accordion33 .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion.accordion33 .accordion-item + .accordion-item {
+  margin-top: 0;
+}
+
+/* Layout summary as flex row, very tight edge padding for left/right alignment */
+.accordion.accordion33 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 4px;
+  cursor: pointer;
+  background: transparent;
+  min-height: 32px;
+  box-sizing: border-box;
+}
+
+/* Remove extra marker space and markers */
+.accordion.accordion33 .accordion-item-label::-webkit-details-marker {
+  display: none;
+}
+
+/* Accordion summary text */
+.accordion.accordion33 .accordion-item-label p {
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.3;
+  padding: 0;
+  flex: 1 1 auto;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Maintain transparent bg on hover/focus/open */
+.accordion.accordion33 .accordion-item-label:focus,
+.accordion.accordion33 .accordion-item-label:hover {
+  background: transparent;
+}
+
+/* Responsiveness: keep padding tight on narrow viewports */
+@media (width <= 600px) {
+  .accordion.accordion33 .accordion-item-label,
+  .accordion.accordion33 .accordion-item-body {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }
