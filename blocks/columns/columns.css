@@ -67,3 +67,80 @@
     height: 240px;
   }
 }
+
+/* === Merged .columns.columns18 selector === */
+.columns.columns18 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.columns.columns18 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 36px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.columns.columns18 > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.columns.columns18 p {
+  color: #444;
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 0;
+  max-width: 210px;
+}
+
+@media (width <= 1050px) {
+  .columns.columns18 {
+    gap: 24px;
+    max-width: 100%;
+  }
+
+  .columns.columns18 > div > div p {
+    max-width: 100%;
+  }
+}
+
+@media (width <= 900px) {
+  .columns.columns18 {
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+
+  .columns.columns18 > div {
+    flex-basis: 50%;
+    max-width: 50%;
+    gap: 24px;
+  }
+}
+
+@media (width <= 600px) {
+  .columns.columns18 {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .columns.columns18 > div {
+    max-width: 100%;
+    flex-basis: 100%;
+    gap: 16px;
+  }
+}
