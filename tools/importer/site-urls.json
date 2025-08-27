@@ -1,86 +1,121 @@
 {
-  "originUrl": "https://www.wknd-trendsetters.site",
-  "lastCrawled": "https://www.wknd-trendsetters.site/",
+  "originUrl": "https://webhook.site",
+  "aborted": false,
+  "lastCrawled": "https://webhook.site/a3804328-0dd9-4573-8f8f-16fb5ecf3b29",
   "urls": [
     {
-      "url": "https://www.wknd-trendsetters.site/",
-      "source": "SITEMAPS",
+      "url": "https://webhook.site/",
+      "source": "CRAWL",
       "targetPath": "/",
-      "id": "1b9ba84f36ee3a519917302a79dfd970725bae31"
+      "id": "a8d2958376b5e7541c0b91e20ba23a736704f757"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/blog/fashion-blog-post",
-      "source": "SITEMAPS",
-      "targetPath": "/blog/fashion-blog-post",
-      "id": "9b4d89f80efba6f8dbcb1e3da8ea8ffa8771a959"
+      "url": "https://webhook.site/a3804328-0dd9-4573-8f8f-16fb5ecf3b29",
+      "source": "CRAWL",
+      "targetPath": "/a3804328-0dd9-4573-8f8f-16fb5ecf3b29",
+      "id": "433ee6e5d88b16fa5f71db0d166c8e3cb3824322"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/blog/fashion-trends-young-culture",
-      "source": "SITEMAPS",
-      "targetPath": "/blog/fashion-trends-young-culture",
-      "id": "f5bdda3762c99b21ef3c8f0ca75cb53a00b4e8bf"
+      "url": "https://webhook.site/form-builder",
+      "source": "CRAWL",
+      "targetPath": "/form-builder",
+      "id": "6e1eef6806da8894bfb52f9e59f2ad3c2ae804af"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/blog/fashion-trends-young-style",
-      "source": "SITEMAPS",
-      "targetPath": "/blog/fashion-trends-young-style",
-      "id": "be00f351b0490d8b536bf724216d6530c30d5684"
+      "url": "https://webhook.site/form-builder?url={{%20getUrl()%20}}",
+      "source": "CRAWL",
+      "targetPath": "/form-builder",
+      "id": "828fd38fa2096d4de40793528d334478ffb1be49"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/blog/latest-trends-young-casual-fashion",
-      "source": "SITEMAPS",
-      "targetPath": "/blog/latest-trends-young-casual-fashion",
-      "id": "971148fccf483ccd07f6ef722bc01c7fb46f61d5"
+      "url": "https://webhook.site/login",
+      "source": "CRAWL",
+      "targetPath": "/login",
+      "id": "654fa224a314fcd6049e053de169ec5b20e889f7"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/faq",
-      "source": "SITEMAPS",
-      "targetPath": "/faq",
-      "id": "429d6f000c5a6e38a121160bf56d01b17365cffe"
+      "url": "https://webhook.site/password/reset",
+      "source": "CRAWL",
+      "targetPath": "/password/reset",
+      "id": "59cea598f628fbb84dba6567538e239872682423"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/fashion-insights",
-      "source": "SITEMAPS",
-      "targetPath": "/fashion-insights",
-      "id": "67430c465ff7767e6ae98a0cffa44cd32754a351"
+      "url": "https://webhook.site/register",
+      "source": "CRAWL",
+      "targetPath": "/register",
+      "id": "28c6431c250b224f2bdde2a55c07c2ae1ac9bb04"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/fashion-trends-of-the-season",
-      "source": "SITEMAPS",
-      "targetPath": "/fashion-trends-of-the-season",
-      "id": "1cfeb2756419a8f56a89a355f5557c3321845adb"
+      "url": "https://webhook.site/register?token_id={{%20token.uuid%20}}&r=navbar-feat",
+      "source": "CRAWL",
+      "targetPath": "/register",
+      "id": "14bb9c681ad309c99b6e32c250a6e631d28ecd95"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/fashion-trends-young-adults",
-      "source": "SITEMAPS",
-      "targetPath": "/fashion-trends-young-adults",
-      "id": "d2dd722de7842a6232ce56b1307d383ff72c9358"
+      "url": "https://webhook.site/register?token_id={{%20token.uuid%20}}&r=navbar-signupnow",
+      "source": "CRAWL",
+      "targetPath": "/register",
+      "id": "c873d2ec69ad032bc9670b31ca2a840a9abb5cde"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/fashion-trends-young-adults-casual-sport",
-      "source": "SITEMAPS",
-      "targetPath": "/fashion-trends-young-adults-casual-sport",
-      "id": "1a14744466075b2d00884f27fb69e2633b6fcb84"
+      "url": "https://webhook.site/register?token_id={{%20token.uuid%20}}&r=th",
+      "source": "CRAWL",
+      "targetPath": "/register",
+      "id": "92f66209958bc362dcb439915585c0256a24ba95"
     },
     {
-      "url": "https://www.wknd-trendsetters.site/latest-trends-young-fashion",
-      "source": "SITEMAPS",
-      "targetPath": "/latest-trends-young-fashion",
-      "id": "f5e200536a2c91b06effaf661df0675e13f262b6"
+      "url": "https://webhook.site/register?token_id={{%20token.uuid%20}}&r=tutorial3",
+      "source": "CRAWL",
+      "targetPath": "/register",
+      "id": "63dc2e6f3133fd8c9a9034d4d7eaa60aaafa767b"
+    },
+    {
+      "url": "https://webhook.site/saml/login",
+      "source": "CRAWL",
+      "targetPath": "/saml/login",
+      "id": "8d5007fb202eaa88e8369e7061119b30ee1b723a"
+    },
+    {
+      "url": "https://webhook.site/terms",
+      "source": "CRAWL",
+      "targetPath": "/terms",
+      "id": "4f58d7a4b0eeddf2e6b0eee4a715ad2e7356cc1b"
     }
   ],
   "crawlOptions": {
     "timeout": 64800000,
     "inclusionPatterns": [],
     "exclusionPatterns": [],
-    "limit": -1,
+    "limit": 100,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "sitemaps",
+    "strategy": "crawl",
     "logger": {},
     "strategiesAttempted": [
-      "SITEMAPS"
+      "SITEMAPS",
+      "CRAWL"
     ]
   },
-  "extractionErrors": []
+  "extractionErrors": [
+    {
+      "url": "https://webhook.site/control-panel",
+      "status": "302 Found Redirect: https://webhook.site/login"
+    },
+    {
+      "url": "https://webhook.site/control-panel/schedules/create?url={{%20getUrl()%20}}",
+      "status": "302 Found Redirect: https://webhook.site/login"
+    },
+    {
+      "url": "https://webhook.site/assets/icons/site.webmanifest",
+      "status": "content type is not text/html"
+    },
+    {
+      "url": "https://webhook.site/fonts/bootstrap/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47",
+      "status": "content type is not text/html"
+    },
+    {
+      "url": "https://webhook.site/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+      "status": "content type is not text/html"
+    }
+  ]
 }
